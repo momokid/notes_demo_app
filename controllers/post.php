@@ -1,6 +1,11 @@
 <?php
-// require 'functions.php';
 
-$heading = 'Post Page';
+$config = require('config.php');
+$db = new Database($config['database']);
 
-require('views/about.view.php');
+$heading = 'My Notes';
+
+$notes = $db->query('select * from notes where user_id = 1')->fetchAll();
+
+
+require('views/post.view.php');
