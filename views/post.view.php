@@ -13,7 +13,7 @@
     <?php endforeach; ?>
 
     <p class="mt-6">
-      <a href="#" class="hover:bg-green-400 rounded-md bg-green-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm">Create Note</a>
+      <a href="notes/create" class="hover:bg-green-400 rounded-md bg-green-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm">Create Note</a>
     </p>
 
   </div>
