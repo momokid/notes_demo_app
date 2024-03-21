@@ -7,7 +7,7 @@
         <p class="mb-6">
             <a href="/post" class="hover:bg-blue-400 rounded-md bg-blue-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm">
                
-                Back
+                Back to notes
             </a>
         </p>
         <p><?= $note['body']; ?></p>
