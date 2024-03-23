@@ -20,12 +20,25 @@ function dd($value)
 
 // echo $_SERVER["REQUEST_URI"] === "/demo/" ? "bg-gray-900 text-white" : "text-gray-300";
 
-function urlIs($value){
+function urlIs($value)
+{
     return $_SERVER["REQUEST_URI"] === $value;
 }
 
-function authorize($condition, $status = Response::FORBIDDEN){
-     if(! $condition){
+function authorize($condition, $status = Response::FORBIDDEN)
+{
+    if (!$condition) {
         abort($status);
-     }
+    }
+}
+
+function base_path($path)
+{
+    return BASE_PATH . $path;
+}
+
+function view($path, $attributes=[])
+{
+    extract($attributes);
+    require base_path('views/' . $path);
 }
