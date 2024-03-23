@@ -3,9 +3,9 @@
 return  [
     '/' => 'controllers/index.php',
     '/about' => 'controllers/about.php',
-    '/post' => 'controllers/post.php',
-    '/note' => 'controllers/note.php',
-    '/notes/create' => 'controllers/note-create.php',
+    '/post' => 'controllers/notes/index.php',
+    '/note' => 'controllers/notes/show.php',
+    '/notes/create' => 'controllers/notes/create.php',
     '/contact' => 'controllers/contact.php',
 ];
 
