@@ -1,5 +1,6 @@
 <?php
 
+use Core\Response;
 
 function dd($value)
 {
@@ -19,6 +20,7 @@ function dd($value)
 // }
 
 // echo $_SERVER["REQUEST_URI"] === "/demo/" ? "bg-gray-900 text-white" : "text-gray-300";
+
 
 function urlIs($value)
 {
